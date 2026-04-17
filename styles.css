@@ -1,1 +1,12 @@
+#inputDiv {
+    display: grid;
+    align-items: center;
+}
 
+#xInput, #yInput {
+    place-self: center;
+}
+
+#tipsDiv {
+    margin-top: 15px;
+}

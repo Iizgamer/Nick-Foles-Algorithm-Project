@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithm Test</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
-    <center>
-        <table id="grid">
+    <table id="grid">
 
-        </table>        
-    </center>
+    </table>        
 
-    <center>
-        <div id="inputDiv">
-            <label for="xInput">Grid Size X</label>
-            <input name="xInput" type="number" id="xInput"> <!-- Event listener is "on input", not "click" or whatever-->
+    <div id="inputDiv">
+        <label for="xInput">Grid Size X</label>
+        <input name="xInput" type="number" id="xInput"> <!-- Event listener is "on input", not "click" or whatever-->
 
-            <label for="yInput">Grid Size Y</label>
-            <input name="yInput" type="number" id="yInput">        
-        </div>        
-    </center>
+        <label for="yInput">Grid Size Y</label>
+        <input name="yInput" type="number" id="yInput">        
+    </div>       
 
-    <center>
-        <div id="tipsDiv">
-            <div style="background-color: red;">Left Click for Walls!</div>
-            <div style="background-color: green;">Right Click for End!</div>
-            <div style="background-color: yellow;">Middle Click for Start!</div>            
-        </div>
+    <div id="tipsDiv">
+        <div style="background-color: red;" class="tip">Left Click for Walls!</div>
+        <div style="background-color: green;" class="tip">Right Click for End!</div>
+        <div style="background-color: yellow;" class="tip">Middle Click for Start!</div>            
+    </div>
 
-    </center>
-
-
+    <div id="startBtnDiv">
+        <button id="startBtn">Start!</button>
+    </div>
+    
 </body>
 </html>

@@ -1,12 +1,35 @@
-#inputDiv {
-    display: grid;
+#grid {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-#xInput, #yInput {
-    place-self: center;
+#inputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #tipsDiv {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip {
+    margin: 10px;
+    font-size: 24px;
+}
+
+#startBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startBtn {
+    font-size: 24px;
+    background-color: gray;
 }

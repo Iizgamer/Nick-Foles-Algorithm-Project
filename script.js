@@ -1,6 +1,7 @@
 const startBtn = document.getElementById('startBtn');
 let xInput = document.getElementById('xInput');
 let yInput = document.getElementById('yInput');
+let grid = document.getElementById('grid');
 
 startBtn.addEventListener('mouseenter', (e) => {
     startBtn.style.background = '#afafaf';  
@@ -18,5 +19,18 @@ class Cell {
 }
 
 startBtn.addEventListener('click', function() {
-    console.log('yInput.value')
+    let count = 1
+    for (i=1; i<=Number(yInput.value); i++) {
+        let row = document.createElement('tr');
+        row.id = `row${i}`;
+        grid.appendChild(row);
+        grid.appendChild(document.createElement('br'));
+        for (j=1; j<=Number(xInput.value); j++) {
+            let cell = document.createElement('td');
+            cell.id = `cell${count}`;
+            count++;
+            cell.textContent = `${count-1}`;
+            row.appendChild(cell);
+        }
+    }
 })

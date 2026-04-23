@@ -19,12 +19,14 @@ class Cell {
 }
 
 startBtn.addEventListener('click', function() {
-    let count = 1
+    grid.innerHTML = '';
+    let count = 1;
+    let row;
+    let cell;
     for (i=1; i<=Number(yInput.value); i++) {
         let row = document.createElement('tr');
         row.id = `row${i}`;
         grid.appendChild(row);
-        grid.appendChild(document.createElement('br'));
         for (j=1; j<=Number(xInput.value); j++) {
             let cell = document.createElement('td');
             cell.id = `cell${count}`;

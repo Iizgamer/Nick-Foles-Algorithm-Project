@@ -1,7 +1,6 @@
 #grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
@@ -39,4 +38,16 @@ td {
     width: 30px;
     height: 30px;
     text-align: center;
+}
+
+.barrier {
+    background-color: red;
+}
+
+.end {
+    background-color: green;
+}
+
+.start {
+    background-color: yellow;
 }
